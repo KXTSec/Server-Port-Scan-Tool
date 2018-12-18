@@ -1,0 +1,39 @@
+img{
+    margin: 25px auto;
+    width: 800px;
+}
+#big div{
+    margin: 20px auto;
+}
+#big{
+    width: 800px;
+    margin: 0 auto;
+}
+.input-group-addon{
+    padding: 0 30px;
+}
+.txt{
+    text-align: center;
+}
+#help{
+    border-radius:5px;
+    width: 730px;
+    background-color: #F5F5F5;
+    font-weight:bold;
+    padding-left: 80px;
+    padding-top: 20px;
+    font-size: 17px;
+    padding-bottom: 1px;
+}
+#help li{
+    margin-bottom: 20px;
+}
+.download{
+    width: 730px;
+    margin-left: 35px;
+}
+#con5{
+    text-align: center;
+    padding-top: 70px;
+    font-size: 30px;
+}

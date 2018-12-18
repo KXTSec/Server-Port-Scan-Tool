@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <script src="./lib/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./lib/index.css">
+    <script src="./lib/bootstrap/js/bootstrap.js"></script>
+    <script src="./lib/index.js"></script>
+    <title>Claye's网络工具</title>
+</head>
+<body  class="container">
+    <img class="img-responsive" src="./src/tittle.png" alt="端口扫描工具" title="宁夏凯信特"><br />
+
+    <div id="big">
+        <!--菜单栏-->
+        <ul class="nav nav-pills nav-justified" id="bar">
+            <li class="active"><a href="#" value="1">全端口扫描</a></li>
+            <li><a href="#" value="2">指定端口扫描</a></li>
+            <li><a href="#" value="3">指定区间扫描</a></li>
+            <li><a href="#" value="4">内网扫描</a></li>
+            <li><a href="#" value="5">移动端扫描</a></li>
+        </ul>
+
+        <!--内容页面，共5页-->
+        <div id="tools">
+            <!--扫描全端口-->
+            <div class="con" id="con1">
+                <div class="input-group">
+                    <span class="input-group-addon">IP/域名</span>
+                    <input type="text" class="form-control txt"  name="address" id="address">
+                </div>
+                <div class="input-group">
+                        <span class="input-group-addon">指定端口</span>
+                        <input type="text" class="form-control txt"  name="port" id="Sport" value="扫描1-65535端口" disabled>
+                        <input type="text" class="form-control"  name="port" id="Eport" style="display:none">
+                </div>
+                <input type="button" value="确定" class="btn btn-success btn-block" id="btn">
+            </div>
+        
+            <!--扫描指定端口-->
+            <div class="con" id="con2" style="display:none">
+                <div class="input-group">
+                    <span class="input-group-addon">IP/域名</span>
+                    <input type="text" class="form-control txt"  name="address" id="address">
+                </div>
+                <div class="input-group">
+                        <span class="input-group-addon">指定端口</span>
+                        <input type="text" class="form-control txt"  name="port" id="Sport">
+                        <input type="text" class="form-control"  name="port" id="Eport" style="display:none">
+                </div>
+                <input type="button" value="确定" class="btn btn-success btn-block" id="btn">
+            </div>
+        
+            <!--扫描指定区间-->
+            <div class="con" id="con3" style="display:none">
+                <div class="input-group">
+                    <span class="input-group-addon">IP/域名</span>
+                    <input type="text" class="form-control txt"  name="address" id="address">
+                </div>
+                <div class="input-group">
+                        <span class="input-group-addon">指定端口</span>
+                        <input type="text" class="form-control txt"  name="port" id="Sport">
+                        <span class="input-group-addon">——</span>
+                        <input type="text" class="form-control txt"  name="port" id="Eport">
+                </div>
+                <input type="button" value="确定" class="btn btn-success btn-block" id="btn">
+            </div>
+        
+            <!--内网扫描-->
+            <div class="con" id="con4" style="display:none">
+                <div id="help">
+                    <ol start='' >
+                        <li>将端口扫描工具下载至本地，解压缩</li>
+                        <li>下载 <a href='http://nodejs.cn/download/'>node.js</a> 环境</li>
+                        <li>终端切换至工具所在文件夹，执行<code>node server.js</code></li>
+                        <li>浏览器访问 <a href='http://localhost:8080' target='_blank' class='url'>http://localhost:8080</a></li> 
+                    </ol>
+                </div>
+                <a href="./src/tool.zip" class="btn btn-success btn-lg btn-block download">Download</a>
+            </div>
+        
+            <!--移动端下载-->
+            <div class="con" id="con5" style="display:none">
+                敬请期待...
+            </div>
+        </div>
+        <!--服务器返回数据显示模块-->
+        <div id="res"></div>
+    </div>
+    <!--宁夏凯信特实验室——许超-->
+</body>
+</html>
